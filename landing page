@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Landing Page</title>
+  <style>
+  *{
+    padding: 0;
+    margin:0;
+    box-sizing:border-box;
+  }
+  header{
+    width:100%;
+    height:100vh;
+    background-image:url(backgroundsky);
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  nav{
+    width:100%;
+    height:100px;
+    color:darkslategrey;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    animation: fadeInUp 2s ease;
+  }
+  .logo{
+    font-size: 2em;
+    letter-spacing:2px;
+  }  
+  .menu a{
+    text-decoration:none;
+    color:white;
+    padding:10px 20px;
+    font-size:20px;
+  }
+  .menu a:before{
+    content:none;
+    position:absolute;
+    top:0;
+    left:0;
+    width:0%;
+    height:100%;
+    border-bottom: 2px solid indianred;
+    transition:0.4s linear;
+  }
+  .menu a:hover:before{
+    width:90%;
+  }
+  img{
+    width:250px;
+    height: 250px;
+    border-radius:1em;
+  }
+  .h-txt{
+    max-width:650px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+    color: aliceblue;
+  }
+  .h-txt span{
+    word-spacing: 2px;
+  }
+  .h-txt h1{
+    font-size:3.5em;
+  }
+  
+  .htxt a{
+    text-decoration: dotted;
+    background: indianred;
+    color:white;
+    padding:10px 20px;
+    letter-spacing:5px;
+  }
+  @keyframes fadeInUp{
+    0%{
+        opacity:0;
+        transform: translate(50px);
+    }
+    100%{
+        opacity:1;
+        transform: translate(0px);
+    }
+
+}
+    </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        Artistrixx
+      </div>
+      <div class="menu">
+        <a href="landing page.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="work.html">work</a>
+      <a href="contact.html">contact</a>
+      </div>
+    </nav>
+    <section class="h-txt">
+      <img src="Artistrixx.jpg.png" alt="company logo"/>
+    <h1>Artistrixx</h1>
+    <span>Let's paint our dreams...</span>
+  </header>
+</body>
+</html>
